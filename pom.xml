@@ -10,7 +10,23 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
-    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.lib.code.Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>         
+        </plugins>
+    </build>
+   
     <dependencies>
         <dependency>
             <groupId>com.sparkjava</groupId>
@@ -18,5 +34,7 @@
             <version>2.9.4</version>
         </dependency>
     </dependencies>
+    
+    
     
 </project>
