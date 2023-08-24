@@ -1,0 +1,8 @@
+nbproject/
+build/
+dist/
+nbbuild/
+.nb-gradle/
+
+# Ignorar la carpeta target de Maven
+target/
